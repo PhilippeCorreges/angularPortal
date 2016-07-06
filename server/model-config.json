@@ -15,7 +15,7 @@
     ]
   },
   "User": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": false
   },
   "accessToken": {
@@ -27,63 +27,63 @@
     "public": true
   },
   "userIdentity": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "AppModel": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": false
   },
   "Page": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Note": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Post": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Setting": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Product": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Category": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Event": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "AuthProvider": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "user": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   },
   "Meta": {
-    "dataSource": "db",
+    "dataSource": "database",
     "public": true
   }
 }

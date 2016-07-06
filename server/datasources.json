@@ -3,6 +3,15 @@
     "name": "db",
     "connector": "memory"
   },
+  "database": {
+    "host": "ds053080.mlab.com",
+    "port": 53080,
+    "database": "iosoftware",
+    "username": "IODBUser",
+    "password": "Zoulou123!",
+    "name": "database",
+    "connector": "mongodb"
+  },
   "transient": {
     "name": "transient",
     "connector": "transient"
