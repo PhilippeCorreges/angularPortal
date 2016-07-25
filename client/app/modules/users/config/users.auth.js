@@ -18,7 +18,7 @@
                 console.log('401 while on router on login path');
               } else {
                 if ($location.path() !== '/register') {
-                  $location.path('/login');
+                  $location.path('/');
                 }
                 CoreService.toastWarning('Error 401 received',
                   'We received a 401 error from the API! Redirecting to login'

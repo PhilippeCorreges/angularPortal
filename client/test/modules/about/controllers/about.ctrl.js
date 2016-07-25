@@ -1,8 +1,11 @@
+/**
+ * Created by IOSoftwareSAS on 23/06/2016.
+ */
 'use strict';
 
 describe('Controller: AboutCtrl', function () {
   var AboutCtrl,
-    scope;
+      scope;
 
   // load the controller's module
   beforeEach(module('ui.router'));
