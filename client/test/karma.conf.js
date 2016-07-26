@@ -1,6 +1,3 @@
-/**
- * Created by IOSoftwareSAS on 23/06/2016.
- */
 // Karma configuration
 // http://karma-runner.github.io/0.12/config/configuration-file.html
 // Generated on 2014-07-30 using
@@ -21,7 +18,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '../app/bower_components/jquery/dist/jquery.js',
+      'app/bower_components/jquery/dist/jquery.js',
       'app/bower_components/angular/angular.js',
       'app/bower_components/bootstrap/dist/js/bootstrap.js',
       'app/bower_components/angular-resource/angular-resource.js',
@@ -60,7 +57,7 @@ module.exports = function (config) {
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/js/*.js',
       'app/modules/**/*.js',
-      '/**/*.js'
+      'test/**/*.js'
     ],
 
     // list of files / patterns to exclude
@@ -86,6 +83,7 @@ module.exports = function (config) {
       'karma-chrome-launcher',
       'karma-firefox-launcher',
       'karma-jasmine',
+      'karma-coverage',
       'karma-junit-reporter'
     ],
     preprocessors: {

@@ -19,12 +19,21 @@
           templateUrl: 'modules/core/views/app.html',
           controller: 'MainCtrl'
         })
+        .state('index', {
+            url: '/',
+            templateUrl: 'modules/core/views/presentation.html',
+            controller: 'MainCtrl'
+          })
         .state('app.home', {
           url: '',
           templateUrl: 'modules/core/views/home.html',
           controller: 'HomeCtrl'
+        })
+        .state('about', {
+          url: '/about',
+          template: '<div>About</div>',
         });
       $urlRouterProvider.otherwise('/router');
-    });
+      });
 
 })();

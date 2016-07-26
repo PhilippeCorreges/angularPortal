@@ -95,15 +95,12 @@
             console.log(user.created); // => 2013-12-20T21:10:20.377Z
             console.log(user.userId); // => 1
 
-            var next = $location.nextAfterLogin || '/';
+            var next = $location.nextAfterLogin || '/app';
             $location.nextAfterLogin = null;
             AppAuth.currentUser = $scope.loginResult.user;
             CoreService.toastSuccess(gettextCatalog.getString('Logged in'),
-              gettextCatalog.getString('You are logged in!'));
-            if (next === '/login') {
-              next = '/';
-            }
-            $location.path(next);
+            gettextCatalog.getString('You are logged in!'));
+            $location.path("/app");
 
           },
           function (res) {

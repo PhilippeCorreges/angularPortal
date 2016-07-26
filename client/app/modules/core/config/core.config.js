@@ -8,6 +8,7 @@
         cfpLoadingBarProvider.includeSpinner = false;
       }
     ])
+      
     .run(function ($rootScope, Setting, gettextCatalog) {
 
       // Left Sidemenu

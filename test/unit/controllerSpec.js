@@ -19,7 +19,7 @@ describe('Controllers ::', function() {
       scope = $rootScope.$new();
       todoStorageMock.storage = [];
       location = $location;
-      todoCtrl = $controller('TodoCtrl', {
+      todoCtrl = $controller('LayoutCtrl', {
         $scope: scope,
         todoStorage: todoStorageMock
       });

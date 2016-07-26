@@ -1,12 +1,33 @@
-'use strict';
+module.exports = function(config) {
+  config.set({
 
-describe('test', function () {
+    basePath: './app',
 
-  describe('dummy', function () {
-    it('should pass this dummy test', function (done) {
-      done();
-    });
+    files: [
+      'bower_components/angular/angular.js',
+      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'components/**/*.js',
+      'view*/**/*.js'
+    ],
+
+    autoWatch: true,
+
+    frameworks: ['jasmine'],
+
+    browsers: ['Chrome'],
+
+    plugins: [
+      'karma-chrome-launcher',
+      'karma-firefox-launcher',
+      'karma-jasmine',
+      'karma-junit-reporter'
+    ],
+
+    junitReporter: {
+      outputFile: 'test_out/unit.xml',
+      suite: 'unit'
+    }
+
   });
-
-
-});
+};

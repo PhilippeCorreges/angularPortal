@@ -24,6 +24,8 @@
   },
   "files": {
     "loopback#static": {
+      "name": "index",
+      "paths": ["/"],
       "params": "$!../client/app"
     }
   },

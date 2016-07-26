@@ -5,19 +5,22 @@
     "usernameField": "username",
     "passwordField": "password",
     "authPath": "/auth/local",
-    "successRedirect": "/auth/account",
-    "failureRedirect": "/local"
+    "successRedirect": "/",
+    "failureRedirect": "/local",
+    "failureFlash": true
   },
   "facebook-login": {
     "provider": "facebook",
     "module": "passport-facebook",
-    "clientID": "{facebook-client-id-1}",
-    "clientSecret": "{facebook-client-secret-1}",
-    "callbackURL": "http://localhost:3000/auth/facebook/callback",
+    "clientID": "619008104780459",
+    "clientSecret": "cb0fdeeafb46c6b9ac9958a951dfcf40",
+    "callbackURL": "/auth/facebook/callback",
     "authPath": "/auth/facebook",
     "callbackPath": "/auth/facebook/callback",
-    "successRedirect": "/auth/account",
-    "scope": ["email"]
+    "successRedirect": "/",
+    "failureRedirect": "/login",
+    "scope": ["email"],
+    "failureFlash": true
   },
   "google-login": {
     "provider": "google",

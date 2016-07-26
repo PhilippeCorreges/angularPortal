@@ -743,7 +743,7 @@ msgstr "Variables"
 
 #: client/app/modules/core/views/home.html:6
 msgid "Welcome!"
-msgstr "Bienvenu!"
+msgstr "Bienvenu !"
 
 #: client/app/modules/users/controllers/login.ctrl.js:91
 msgid "You are logged in!"

@@ -25,7 +25,7 @@
         AppAuth.logout(function () {
           CoreService.toastSuccess(gettextCatalog.getString('Logged out'),
             gettextCatalog.getString('You are logged out!'));
-          $state.go('login');
+          $state.go('index');
         });
       };
 

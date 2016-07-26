@@ -1,24 +1,21 @@
 {
-  "name": "loopback-angular-admin",
-  "subdomain": "loopback-angular-admin",
-  "description": "Quickly create admin interfaces on a Loopback 2.x API",
+  "name": "People",
+  "subdomain": "People",
+  "description": "Manage People",
   "version": "0.1.1",
   "engines": {
     "node": "5.5.0",
     "npm": "3.3.12"
   },
-  "homepage": "https://github.com/beeman/loopback-angular-admin",
-  "author": "Bram Borggreve <borggreve@gmail.com>",
+  "author": "Philippe Corrèges <philippe.correges@io-software.fr>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/beeman/loopback-angular-admin"
-  },
-  "bugs": {
-    "url": "https://github.com/beeman/loopback-angular-admin/issues"
-  },
+
+
   "scripts": {
-    "test": "mocha",
+    "pretest": "npm install",
+    "test": "karma start /karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run",
+    "protractor": "protractor e2e-tests/protractor.conf.js",
     "start": "node server/server.js",
     "dev": "nodemon server/server.js --watch server --watch common --ext js,json ",
     "postinstall": "bower install && grunt build"
@@ -92,15 +89,26 @@
     "time-grunt": "1.0.0"
   },
   "devDependencies": {
+    "angular-mocks": "^1.5.5",
+    "angular-scenario": "~1.3.0",
+    "angular-smart-table": "~2.1.2",
     "browserify": "8.1.3",
     "connect-livereload": "0.5.2",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-jenkins": "0.6.0",
+    "grunt-protractor-runner": "3.2.0",
     "jasmine-core": "2.2.0",
     "karma": "0.12.31",
+    "karma-chrome-launcher": "1.0.1",
     "karma-cli": "0.0.4",
     "karma-coverage": "0.2.7",
+    "karma-firefox-launcher": "1.0.0",
+    "karma-ie-launcher": "1.0.0",
     "karma-jasmine": "0.3.5",
+    "karma-junit-reporter": "1.0.0",
     "karma-phantomjs-launcher": "0.1.4",
     "mocha": "2.3.3",
+    "phantomjs": "2.1.7",
     "run-sequence": "1.0.2",
     "tiny-lr": "0.1.5"
   }
